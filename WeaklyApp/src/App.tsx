@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 //Screen and Component
 import HomeScreen from './Screens/HomeScreen/HomeScreen';
 import TodayScreen from './Screens/Today/TodayScreen';
-import { Screen } from 'react-native-screens';
+
 
 const Stack = createNativeStackNavigator();
 

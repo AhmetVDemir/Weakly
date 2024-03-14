@@ -1,13 +1,32 @@
 
 import React from 'react';
-import { Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import HomeStyle from './HomeStyle';
-function HomeScreen(): React.JSX.Element {
+
+function HomeScreen({ navigation }): React.JSX.Element {
     
     return (
-        <SafeAreaView>
-            <Text style={HomeStyle.text}>Ana Sayfa Hoş Geldiniz : Eğer data boşsa</Text>
+        <SafeAreaView style={HomeStyle.container}>
+            <View style={HomeStyle.innerContainer}>
+                <Text style={HomeStyle.text}>Weakly Routine Planner</Text>
+                <Text style={HomeStyle.text2}>
+                Jules Payot : İnsqanlar vazgeçemedikleri arzularının kölesidirler. Kimse hak etmediği sürece özgür olamaz.
+                    
+                </Text>
+                <Text style={HomeStyle.text2}>
+                   Aristotales : Mükemmellik bir şey değil bir alışkanlıktır.
+                </Text>
+            </View>
+
+            <View style={HomeStyle.buttonContainer}>
+                <TouchableOpacity style={HomeStyle.button} onPress={()=> navigation.navigate('Today')} >
+                    <Text style={HomeStyle.buttonText}>Günü Görüntüle</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={HomeStyle.squareButton}>
+                    <Text style={HomeStyle.plus}>Rutin Ekle</Text>
+                </TouchableOpacity>
+            </View>
         </SafeAreaView>
     );
 
