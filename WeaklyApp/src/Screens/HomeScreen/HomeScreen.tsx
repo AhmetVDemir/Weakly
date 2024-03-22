@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import HomeStyle from './HomeStyle';
+import { WeekDay } from '../../Helpers/Enums/WeekDays';
 
 function HomeScreen({ navigation }): React.JSX.Element {
     

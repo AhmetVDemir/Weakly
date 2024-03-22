@@ -7,13 +7,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 //Screen and Component
 import HomeScreen from './Screens/HomeScreen/HomeScreen';
 import TodayScreen from './Screens/Today/TodayScreen';
+import { WeekDay } from './Helpers/Enums/WeekDays';
 
 
 const Stack = createNativeStackNavigator();
 
 
 function App(): React.JSX.Element {
-
 
   return(
     <NavigationContainer>
