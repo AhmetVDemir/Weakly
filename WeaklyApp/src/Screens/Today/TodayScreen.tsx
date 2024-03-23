@@ -7,7 +7,7 @@ function TodayScreen(): React.JSX.Element {
       
     return (
         <SafeAreaView>
-            <Text>Today List : Eğer data varsa</Text>
+            <Text style={TodayStyle.text}>Today List : Eğer data varsa</Text>
         </SafeAreaView>
     );
 }
