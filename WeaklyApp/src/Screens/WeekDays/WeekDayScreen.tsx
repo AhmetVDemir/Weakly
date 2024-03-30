@@ -10,7 +10,7 @@ function WeekDayScreen() : React.JSX.Element {
     return(
         <SafeAreaView>
             <Text style={WeekDayStyle.text}>
-                Merhaba
+                Merhaba Week day screen
             </Text>
 
         </SafeAreaView>
